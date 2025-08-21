@@ -1,2 +1,3 @@
 # companion-module-meyersound-galaxy
-This is the unoficial modul to control Meyer Sound Galaxy
+
+See [HELP.md](./companion/HELP.md) and [LICENSE](./LICENSE)
