@@ -399,7 +399,7 @@ module.exports = function UpdateActions(self, NUM_INPUTS, NUM_OUTPUTS) {
   // ===== Speaker test ======
   // =========================
   actions['output_chase_start'] = {
-    name: 'Speaker test: Start chase',
+    name: 'Speaker test: Start',
     options: [
       { type: 'dropdown', id: 'start', label: 'First output', default: '1', choices: outputChoicesNum },
       { type: 'dropdown', id: 'end',   label: 'Last output',  default: String(Math.min(8, NUM_OUTPUTS)), choices: outputChoicesNum },
@@ -417,7 +417,7 @@ module.exports = function UpdateActions(self, NUM_INPUTS, NUM_OUTPUTS) {
     ],
     callback: (e) => self._startOutputChase(Number(e.options.start), Number(e.options.end), Number(e.options.delay), Number(e.options.window)),
   }
-  actions['output_chase_stop'] = { name: 'Speaker test: Stop chase', options: [], callback: () => self._stopOutputChase() }
+  actions['output_chase_stop'] = { name: 'Speaker test: Stop', options: [], callback: () => self._stopOutputChase() }
 
   // =========================
   // ===== AVB connect =======
