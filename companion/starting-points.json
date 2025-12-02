@@ -1,0 +1,998 @@
+{
+	"fileVersion": "1.2",
+	"speakerCategories": {
+		"1100-LFC": "subwoofer",
+		"2100-LFC": "subwoofer",
+		"900-LFC": "subwoofer",
+		"750-LFC": "subwoofer",
+		"M1D-Sub": "subwoofer",
+		"M2D-Sub": "subwoofer",
+		"M3D-Sub": "subwoofer",
+		"USW-1P": "subwoofer",
+		"500-HP": "subwoofer",
+		"600-HP": "subwoofer",
+		"650-P": "subwoofer",
+		"700-HP": "subwoofer",
+		"UMS-1P": "subwoofer",
+		"UMS-1XP": "subwoofer",
+		"LF-18": "subwoofer",
+		"X-1100C": "subwoofer",
+		"PANTHER": "line-array",
+		"LEO": "line-array",
+		"LYON": "line-array",
+		"LEOPARD": "line-array",
+		"LINA": "line-array",
+		"MILO": "line-array",
+		"MICA": "line-array",
+		"MELODIE": "line-array",
+		"MINA": "line-array",
+		"M3D": "line-array",
+		"M2D": "line-array",
+		"M1D": "line-array"
+	},
+	"mixedArrayCombinations": {
+		"LEO": {
+			"secondary": "LYON",
+			"secondaryDelayMs": 0,
+			"primaryDelayMs": 8.05,
+			"label": "LEO + LYON"
+		},
+		"LYON": {
+			"secondary": "LEOPARD",
+			"secondaryDelayMs": 0,
+			"primaryDelayMs": 6.1,
+			"label": "LYON + LEOPARD"
+		},
+		"LINA": {
+			"secondary": "MINA",
+			"secondaryDelayMs": 0,
+			"primaryDelayMs": 0.55,
+			"label": "LINA + MINA"
+		},
+		"MILO": {
+			"secondary": "MICA",
+			"secondaryDelayMs": 0,
+			"primaryDelayMs": 0,
+			"label": "MILO + MICA"
+		},
+		"MICA": {
+			"secondary": "MELODIE",
+			"secondaryDelayMs": 0,
+			"primaryDelayMs": 0,
+			"label": "MICA + MELODIE"
+		},
+		"MELODIE": {
+			"secondary": "MINA",
+			"secondaryDelayMs": 0,
+			"primaryDelayMs": 0,
+			"label": "MELODIE + MINA"
+		}
+	},
+	"mixedArrayCompensation": {
+		"LEO": {
+			"delayMs": 8.05,
+			"label": "Mixed array LEO/LYON"
+		},
+		"LEOPARD": {
+			"delayMs": 6.1,
+			"label": "Mixed array LYON/LEOPARD"
+		},
+		"MINA": {
+			"delayMs": 0.55,
+			"label": "Mixed array LINA/MINA"
+		}
+	},
+	"startingPoint": {
+		"LEO": [
+			{
+				"controlPoints": [
+					"/processing/output/{}/ushaping/1/gain='-3'",
+					"/processing/output/{}/ushaping/2/gain='3'",
+					"/processing/output/{}/ushaping/3/gain='3'",
+					"/processing/output/{}/ushaping/4/gain='7'",
+					"/processing/output/{}/ushaping/5/gain='3'",
+					"/processing/output/{}/ushaping/1/frequency='350'",
+					"/processing/output/{}/ushaping/2/frequency='2000'",
+					"/processing/output/{}/ushaping/3/frequency='6000'",
+					"/processing/output/{}/ushaping/4/frequency='16000'",
+					"/processing/output/{}/ushaping/4/slope='4'",
+					"/processing/output/{}/eq/1/band_bypass='true'",
+					"/processing/output/{}/eq/1/frequency='70'",
+					"/processing/output/{}/eq/1/bandwidth='0.5'",
+					"/processing/output/{}/eq/1/gain='-3'",
+					"/processing/output/{}/allpass/1/frequency='32'",
+					"/processing/output/{}/allpass/2/frequency='64'",
+					"/processing/output/{}/allpass/3/frequency='128'",
+					"/processing/output/{}/beam_control_allpass/q='1'"
+				],
+				"title": "LEO - M Medium (5 to 10 deg for three elements)"
+			},
+			{
+				"controlPoints": [
+					"/processing/output/{}/ushaping/1/gain='-3'",
+					"/processing/output/{}/ushaping/2/gain='1.5'",
+					"/processing/output/{}/ushaping/3/gain='1.5'",
+					"/processing/output/{}/ushaping/4/gain='9'",
+					"/processing/output/{}/ushaping/5/gain='3'",
+					"/processing/output/{}/ushaping/1/frequency='350'",
+					"/processing/output/{}/ushaping/2/frequency='2000'",
+					"/processing/output/{}/ushaping/3/frequency='10000'",
+					"/processing/output/{}/ushaping/4/frequency='16000'",
+					"/processing/output/{}/ushaping/4/slope='4'",
+					"/processing/output/{}/eq/1/band_bypass='true'",
+					"/processing/output/{}/eq/1/frequency='70'",
+					"/processing/output/{}/eq/1/bandwidth='0.5'",
+					"/processing/output/{}/eq/1/gain='-3'",
+					"/processing/output/{}/allpass/1/frequency='32'",
+					"/processing/output/{}/allpass/2/frequency='64'",
+					"/processing/output/{}/allpass/3/frequency='128'",
+					"/processing/output/{}/beam_control_allpass/q='1'"
+				],
+				"title": "LEO - M narrow (1 to 5 deg for three elements)(standard)"
+			}
+		],
+		"LYON": [
+			{
+				"controlPoints": [
+					"/processing/output/{}/ushaping/1/gain='-6'",
+					"/processing/output/{}/ushaping/2/gain='-1.5'",
+					"/processing/output/{}/ushaping/3/gain='3'",
+					"/processing/output/{}/ushaping/4/gain='3'",
+					"/processing/output/{}/ushaping/5/gain='3'",
+					"/processing/output/{}/ushaping/1/frequency='160'",
+					"/processing/output/{}/ushaping/2/frequency='575'",
+					"/processing/output/{}/ushaping/3/frequency='6000'",
+					"/processing/output/{}/ushaping/4/frequency='16000'",
+					"/processing/output/{}/ushaping/4/slope='4'",
+					"/processing/output/{}/eq/1/band_bypass='true'",
+					"/processing/output/{}/eq/1/frequency='70'",
+					"/processing/output/{}/eq/1/bandwidth='0.5'",
+					"/processing/output/{}/eq/1/gain='-3'",
+					"/processing/output/{}/highpass/frequency='63'",
+					"/processing/output/{}/allpass/1/frequency='32'",
+					"/processing/output/{}/allpass/2/frequency='64'",
+					"/processing/output/{}/allpass/3/frequency='128'",
+					"/processing/output/{}/beam_control_allpass/q='1'"
+				],
+				"title": "Lyon - M Medium (5 to 15 for 4 elements)"
+			},
+			{
+				"controlPoints": [
+					"/processing/output/{}/ushaping/1/gain='-3'",
+					"/processing/output/{}/ushaping/3/gain='3'",
+					"/processing/output/{}/ushaping/4/gain='3'",
+					"/processing/output/{}/ushaping/5/gain='3'",
+					"/processing/output/{}/ushaping/1/frequency='160'",
+					"/processing/output/{}/ushaping/2/frequency='650'",
+					"/processing/output/{}/ushaping/2/slope='1'",
+					"/processing/output/{}/ushaping/3/frequency='6000'",
+					"/processing/output/{}/ushaping/4/frequency='16000'",
+					"/processing/output/{}/ushaping/4/slope='4'",
+					"/processing/output/{}/eq/1/band_bypass='true'",
+					"/processing/output/{}/eq/1/frequency='70'",
+					"/processing/output/{}/eq/1/bandwidth='0.5'",
+					"/processing/output/{}/eq/1/gain='-3'",
+					"/processing/output/{}/highpass/frequency='63'",
+					"/processing/output/{}/allpass/1/frequency='32'",
+					"/processing/output/{}/allpass/2/frequency='64'",
+					"/processing/output/{}/allpass/3/frequency='128'",
+					"/processing/output/{}/beam_control_allpass/q='1'"
+				],
+				"title": "Lyon - M Narrow (1.5 to 5 for 4 elements)(standard)"
+			},
+			{
+				"controlPoints": [
+					"/processing/output/{}/ushaping/1/frequency='62'",
+					"/processing/output/{}/ushaping/1/gain='0'",
+					"/processing/output/{}/ushaping/2/frequency='250'",
+					"/processing/output/{}/ushaping/2/slope='2'",
+					"/processing/output/{}/ushaping/3/frequency='1000'",
+					"/processing/output/{}/ushaping/3/gain='0'",
+					"/processing/output/{}/ushaping/4/frequency='4000'",
+					"/processing/output/{}/ushaping/4/slope='2'",
+					"/processing/output/{}/ushaping/4/gain='0'",
+					"/processing/output/{}/ushaping/5/gain='0'",
+					"/processing/output/{}/eq/1/band_bypass='false'",
+					"/processing/output/{}/eq/1/frequency='32'",
+					"/processing/output/{}/eq/1/gain='0'",
+					"/processing/output/{}/eq/1/bandwidth='1'",
+					"/processing/output/{}/highpass/frequency='40'",
+					"/processing/output/{}/allpass/1/frequency='32'",
+					"/processing/output/{}/allpass/2/frequency='64'",
+					"/processing/output/{}/allpass/3/frequency='128'"
+				],
+				"title": "Lyon - M wide (15 to 27 for 4 elements)"
+			},
+			{
+				"controlPoints": [
+					"/processing/output/{}/ushaping/1/gain='-6'",
+					"/processing/output/{}/ushaping/2/gain='-1.5'",
+					"/processing/output/{}/ushaping/3/gain='3'",
+					"/processing/output/{}/ushaping/4/gain='3'",
+					"/processing/output/{}/ushaping/5/gain='3'",
+					"/processing/output/{}/ushaping/1/frequency='160'",
+					"/processing/output/{}/ushaping/2/frequency='575'",
+					"/processing/output/{}/ushaping/3/frequency='6000'",
+					"/processing/output/{}/ushaping/4/frequency='16000'",
+					"/processing/output/{}/ushaping/4/slope='4'",
+					"/processing/output/{}/eq/1/band_bypass='true'",
+					"/processing/output/{}/eq/1/frequency='70'",
+					"/processing/output/{}/eq/1/bandwidth='0.5'",
+					"/processing/output/{}/eq/1/gain='-3'",
+					"/processing/output/{}/eq/7/frequency='1380'",
+					"/processing/output/{}/eq/7/bandwidth='0.48'",
+					"/processing/output/{}/eq/7/gain='-2'",
+					"/processing/output/{}/eq/8/frequency='2000'",
+					"/processing/output/{}/eq/8/bandwidth='0.32'",
+					"/processing/output/{}/eq/8/gain='2.5'",
+					"/processing/output/{}/eq/9/frequency='2530'",
+					"/processing/output/{}/eq/9/bandwidth='0.48'",
+					"/processing/output/{}/eq/9/gain='-3'",
+					"/processing/output/{}/highpass/frequency='63'",
+					"/processing/output/{}/allpass/1/frequency='32'",
+					"/processing/output/{}/allpass/2/frequency='64'",
+					"/processing/output/{}/allpass/3/frequency='128'",
+					"/processing/output/{}/beam_control_allpass/q='1'"
+				],
+				"title": "Lyon - W Medium (5 to 15 for 4 elements)"
+			},
+			{
+				"controlPoints": [
+					"/processing/output/{}/ushaping/1/gain='-3'",
+					"/processing/output/{}/ushaping/3/gain='3'",
+					"/processing/output/{}/ushaping/4/gain='3'",
+					"/processing/output/{}/ushaping/5/gain='3'",
+					"/processing/output/{}/ushaping/1/frequency='160'",
+					"/processing/output/{}/ushaping/2/frequency='650'",
+					"/processing/output/{}/ushaping/2/slope='1'",
+					"/processing/output/{}/ushaping/3/frequency='6000'",
+					"/processing/output/{}/ushaping/4/frequency='16000'",
+					"/processing/output/{}/ushaping/4/slope='4'",
+					"/processing/output/{}/eq/1/band_bypass='true'",
+					"/processing/output/{}/eq/1/frequency='70'",
+					"/processing/output/{}/eq/1/bandwidth='0.5'",
+					"/processing/output/{}/eq/1/gain='-3'",
+					"/processing/output/{}/eq/7/frequency='1380'",
+					"/processing/output/{}/eq/7/bandwidth='0.48'",
+					"/processing/output/{}/eq/7/gain='-2'",
+					"/processing/output/{}/eq/8/frequency='2000'",
+					"/processing/output/{}/eq/8/bandwidth='0.32'",
+					"/processing/output/{}/eq/8/gain='2.5'",
+					"/processing/output/{}/eq/9/frequency='2530'",
+					"/processing/output/{}/eq/9/bandwidth='0.48'",
+					"/processing/output/{}/eq/9/gain='-3'",
+					"/processing/output/{}/highpass/frequency='63'",
+					"/processing/output/{}/allpass/1/frequency='32'",
+					"/processing/output/{}/allpass/2/frequency='64'",
+					"/processing/output/{}/allpass/3/frequency='128'",
+					"/processing/output/{}/beam_control_allpass/q='1'"
+				],
+				"title": "Lyon - W Narrow (1.5 to 5 for 4 elements)(standard)"
+			},
+			{
+				"controlPoints": [
+					"/processing/output/{}/ushaping/1/gain='-9'",
+					"/processing/output/{}/ushaping/2/gain='-3'",
+					"/processing/output/{}/ushaping/3/gain='3'",
+					"/processing/output/{}/ushaping/4/gain='3'",
+					"/processing/output/{}/ushaping/5/gain='3'",
+					"/processing/output/{}/ushaping/1/frequency='160'",
+					"/processing/output/{}/ushaping/2/frequency='500'",
+					"/processing/output/{}/ushaping/3/frequency='6000'",
+					"/processing/output/{}/ushaping/4/frequency='16000'",
+					"/processing/output/{}/ushaping/4/slope='4'",
+					"/processing/output/{}/eq/1/band_bypass='true'",
+					"/processing/output/{}/eq/1/frequency='70'",
+					"/processing/output/{}/eq/1/bandwidth='0.5'",
+					"/processing/output/{}/eq/1/gain='-3'",
+					"/processing/output/{}/eq/7/frequency='1380'",
+					"/processing/output/{}/eq/7/bandwidth='0.48'",
+					"/processing/output/{}/eq/7/gain='-2'",
+					"/processing/output/{}/eq/8/frequency='2000'",
+					"/processing/output/{}/eq/8/bandwidth='0.32'",
+					"/processing/output/{}/eq/8/gain='2.5'",
+					"/processing/output/{}/eq/9/frequency='2530'",
+					"/processing/output/{}/eq/9/bandwidth='0.48'",
+					"/processing/output/{}/eq/9/gain='-3'",
+					"/processing/output/{}/highpass/frequency='63'",
+					"/processing/output/{}/allpass/1/frequency='32'",
+					"/processing/output/{}/allpass/2/frequency='64'",
+					"/processing/output/{}/allpass/3/frequency='128'",
+					"/processing/output/{}/beam_control_allpass/q='1'"
+				],
+				"title": "Lyon - W wide (15 to 27 for 4 elements)"
+			}
+		],
+		"MILO": [
+			{
+				"controlPoints": [
+					"/processing/output/{}/ushaping/1/gain='-10'",
+					"/processing/output/{}/ushaping/2/gain='-3'",
+					"/processing/output/{}/ushaping/3/gain='1'",
+					"/processing/output/{}/ushaping/4/gain='3'",
+					"/processing/output/{}/ushaping/5/gain='3'",
+					"/processing/output/{}/ushaping/1/frequency='189'",
+					"/processing/output/{}/ushaping/1/slope='1'",
+					"/processing/output/{}/ushaping/2/frequency='576'",
+					"/processing/output/{}/ushaping/2/slope='1'",
+					"/processing/output/{}/ushaping/3/frequency='2247'",
+					"/processing/output/{}/ushaping/3/slope='1'",
+					"/processing/output/{}/ushaping/4/frequency='8000'",
+					"/processing/output/{}/ushaping/4/slope='1'",
+					"/processing/output/{}/eq/1/band_bypass='true'",
+					"/processing/output/{}/eq/1/frequency='80'",
+					"/processing/output/{}/eq/1/bandwidth='0.5'",
+					"/processing/output/{}/eq/1/gain='-3'",
+					"/processing/output/{}/allpass/1/frequency='32'",
+					"/processing/output/{}/allpass/2/frequency='64'",
+					"/processing/output/{}/allpass/3/frequency='128'",
+					"/processing/output/{}/beam_control_allpass/q='1'"
+				],
+				"title": "Milo 12 boxes standard"
+			}
+		],
+		"MICA": [
+			{
+				"controlPoints": [
+					"/processing/output/{}/ushaping/1/gain='-5.5'",
+					"/processing/output/{}/ushaping/2/gain='-3.5'",
+					"/processing/output/{}/ushaping/3/gain='-1.5'",
+					"/processing/output/{}/ushaping/4/gain='4.5'",
+					"/processing/output/{}/ushaping/5/gain='4.5'",
+					"/processing/output/{}/ushaping/1/frequency='200'",
+					"/processing/output/{}/ushaping/2/frequency='1000'",
+					"/processing/output/{}/ushaping/3/frequency='6000'",
+					"/processing/output/{}/ushaping/4/frequency='16000'",
+					"/processing/output/{}/eq/1/band_bypass='true'",
+					"/processing/output/{}/eq/1/frequency='80'",
+					"/processing/output/{}/eq/1/bandwidth='0.5'",
+					"/processing/output/{}/eq/1/gain='-3'",
+					"/processing/output/{}/allpass/1/frequency='32'",
+					"/processing/output/{}/allpass/2/frequency='64'",
+					"/processing/output/{}/allpass/3/frequency='128'",
+					"/processing/output/{}/beam_control_allpass/q='1'"
+				],
+				"title": "Mica Medium (6 to 24 for 4 elements)"
+			},
+			{
+				"controlPoints": [
+					"/processing/output/{}/ushaping/1/gain='-5.5'",
+					"/processing/output/{}/ushaping/2/gain='-3.5'",
+					"/processing/output/{}/ushaping/3/gain='-0.5'",
+					"/processing/output/{}/ushaping/4/gain='4.5'",
+					"/processing/output/{}/ushaping/5/gain='4.5'",
+					"/processing/output/{}/ushaping/1/frequency='200'",
+					"/processing/output/{}/ushaping/2/frequency='1000'",
+					"/processing/output/{}/ushaping/3/frequency='8000'",
+					"/processing/output/{}/ushaping/4/frequency='16000'",
+					"/processing/output/{}/eq/1/band_bypass='true'",
+					"/processing/output/{}/eq/1/frequency='80'",
+					"/processing/output/{}/eq/1/bandwidth='0.5'",
+					"/processing/output/{}/eq/1/gain='-3'",
+					"/processing/output/{}/allpass/1/frequency='32'",
+					"/processing/output/{}/allpass/2/frequency='64'",
+					"/processing/output/{}/allpass/3/frequency='128'",
+					"/processing/output/{}/beam_control_allpass/q='1'"
+				],
+				"title": "Mica Narrow (1.5 to 6 for 4 elements)(standard)"
+			},
+			{
+				"controlPoints": [
+					"/processing/output/{}/ushaping/1/gain='-5.5'",
+					"/processing/output/{}/ushaping/2/gain='-3.5'",
+					"/processing/output/{}/ushaping/3/gain='1.5'",
+					"/processing/output/{}/ushaping/4/gain='4.5'",
+					"/processing/output/{}/ushaping/5/gain='4.5'",
+					"/processing/output/{}/ushaping/1/frequency='200'",
+					"/processing/output/{}/ushaping/2/frequency='600'",
+					"/processing/output/{}/ushaping/3/frequency='6000'",
+					"/processing/output/{}/ushaping/4/frequency='16000'",
+					"/processing/output/{}/eq/1/band_bypass='true'",
+					"/processing/output/{}/eq/1/frequency='80'",
+					"/processing/output/{}/eq/1/bandwidth='0.5'",
+					"/processing/output/{}/eq/1/gain='-3'",
+					"/processing/output/{}/allpass/1/frequency='32'",
+					"/processing/output/{}/allpass/2/frequency='64'",
+					"/processing/output/{}/allpass/3/frequency='128'",
+					"/processing/output/{}/beam_control_allpass/q='1'"
+				],
+				"title": "Mica Wide (24 to 33 for 4 elements)"
+			}
+		],
+		"M'elodie": [
+			{
+				"controlPoints": [
+					"/processing/output/{}/ushaping/1/gain='-9'",
+					"/processing/output/{}/ushaping/2/gain='-4'",
+					"/processing/output/{}/ushaping/3/gain='1'",
+					"/processing/output/{}/ushaping/4/gain='3'",
+					"/processing/output/{}/ushaping/5/gain='3'",
+					"/processing/output/{}/ushaping/1/frequency='189'",
+					"/processing/output/{}/ushaping/1/slope='1'",
+					"/processing/output/{}/ushaping/2/frequency='576'",
+					"/processing/output/{}/ushaping/2/slope='1'",
+					"/processing/output/{}/ushaping/3/frequency='2247'",
+					"/processing/output/{}/ushaping/3/slope='1'",
+					"/processing/output/{}/ushaping/4/frequency='8000'",
+					"/processing/output/{}/ushaping/4/slope='1'",
+					"/processing/output/{}/allpass/1/frequency='32'",
+					"/processing/output/{}/allpass/2/frequency='64'",
+					"/processing/output/{}/allpass/3/frequency='128'",
+					"/processing/output/{}/beam_control_allpass/q='1'"
+				],
+				"title": "M'elodie 12 box standard"
+			}
+		],
+		"MINA": [
+			{
+				"controlPoints": [
+					"/processing/output/{}/ushaping/1/gain='-6.5'",
+					"/processing/output/{}/ushaping/2/gain='-6.5'",
+					"/processing/output/{}/ushaping/3/gain='-6.5'",
+					"/processing/output/{}/ushaping/4/gain='3.5'",
+					"/processing/output/{}/ushaping/5/gain='4.5'",
+					"/processing/output/{}/ushaping/1/frequency='125'",
+					"/processing/output/{}/ushaping/1/slope='1'",
+					"/processing/output/{}/ushaping/2/frequency='600'",
+					"/processing/output/{}/ushaping/2/slope='1'",
+					"/processing/output/{}/ushaping/3/frequency='6000'",
+					"/processing/output/{}/ushaping/3/slope='1'",
+					"/processing/output/{}/ushaping/4/frequency='8000'",
+					"/processing/output/{}/ushaping/4/slope='1'",
+					"/processing/output/{}/eq/1/band_bypass='true'",
+					"/processing/output/{}/eq/1/frequency='80'",
+					"/processing/output/{}/eq/1/bandwidth='0.5'",
+					"/processing/output/{}/eq/1/gain='-3'",
+					"/processing/output/{}/allpass/1/frequency='32'",
+					"/processing/output/{}/allpass/2/frequency='64'",
+					"/processing/output/{}/allpass/3/frequency='128'",
+					"/processing/output/{}/beam_control_allpass/q='1'"
+				],
+				"title": "Mina Medium (6 to 24 for 4 elements)"
+			},
+			{
+				"controlPoints": [
+					"/processing/output/{}/ushaping/1/gain='-3.5'",
+					"/processing/output/{}/ushaping/2/gain='-3.5'",
+					"/processing/output/{}/ushaping/3/gain='-3.5'",
+					"/processing/output/{}/ushaping/4/gain='4'",
+					"/processing/output/{}/ushaping/5/gain='4.5'",
+					"/processing/output/{}/ushaping/1/frequency='125'",
+					"/processing/output/{}/ushaping/1/slope='1'",
+					"/processing/output/{}/ushaping/2/frequency='700'",
+					"/processing/output/{}/ushaping/2/slope='1'",
+					"/processing/output/{}/ushaping/3/frequency='4000'",
+					"/processing/output/{}/ushaping/3/slope='1'",
+					"/processing/output/{}/ushaping/4/frequency='8000'",
+					"/processing/output/{}/ushaping/4/slope='1'",
+					"/processing/output/{}/eq/1/band_bypass='true'",
+					"/processing/output/{}/eq/1/frequency='80'",
+					"/processing/output/{}/eq/1/bandwidth='0.5'",
+					"/processing/output/{}/eq/1/gain='-3'",
+					"/processing/output/{}/allpass/1/frequency='32'",
+					"/processing/output/{}/allpass/2/frequency='64'",
+					"/processing/output/{}/allpass/3/frequency='128'",
+					"/processing/output/{}/beam_control_allpass/q='1'"
+				],
+				"title": "Mina Narrow (1.5 to 6 for 4 elements)(standard)"
+			},
+			{
+				"controlPoints": [
+					"/processing/output/{}/ushaping/1/gain='-9.5'",
+					"/processing/output/{}/ushaping/2/gain='-9.5'",
+					"/processing/output/{}/ushaping/3/gain='-2.5'",
+					"/processing/output/{}/ushaping/5/gain='1.5'",
+					"/processing/output/{}/ushaping/1/frequency='125'",
+					"/processing/output/{}/ushaping/1/slope='1'",
+					"/processing/output/{}/ushaping/2/frequency='500'",
+					"/processing/output/{}/ushaping/2/slope='1'",
+					"/processing/output/{}/ushaping/3/frequency='6000'",
+					"/processing/output/{}/ushaping/3/slope='1'",
+					"/processing/output/{}/ushaping/4/frequency='8000'",
+					"/processing/output/{}/ushaping/4/slope='1'",
+					"/processing/output/{}/eq/1/band_bypass='true'",
+					"/processing/output/{}/eq/1/frequency='80'",
+					"/processing/output/{}/eq/1/bandwidth='0.5'",
+					"/processing/output/{}/eq/1/gain='-3'",
+					"/processing/output/{}/allpass/1/frequency='32'",
+					"/processing/output/{}/allpass/2/frequency='64'",
+					"/processing/output/{}/allpass/3/frequency='128'",
+					"/processing/output/{}/beam_control_allpass/q='1'"
+				],
+				"title": "Mina Wide (24 to 33 for 4 elements)"
+			}
+		],
+		"LF-18": [
+			{
+				"controlPoints": [
+					"/processing/output/{}/allpass/1/frequency='32'",
+					"/processing/output/{}/allpass/2/frequency='64'",
+					"/processing/output/{}/allpass/3/frequency='128'",
+					"/processing/output/{}/beam_control_allpass/q='1'"
+				],
+				"title": "LF - 18 Front Facing"
+			},
+			{
+				"controlPoints": [
+					"/processing/output/{}/delay='365'",
+					"/processing/output/{}/polarity_reversal='true'",
+					"/processing/output/{}/allpass/1/frequency='32'",
+					"/processing/output/{}/allpass/2/frequency='64'",
+					"/processing/output/{}/allpass/3/frequency='128'",
+					"/processing/output/{}/beam_control_allpass/q='1'"
+				],
+				"title": "LF - 18 Rear Facing"
+			}
+		],
+		"X-1100C": [
+			{
+				"controlPoints": [
+					"/processing/output/{}/allpass/1/frequency='32'",
+					"/processing/output/{}/allpass/2/frequency='64'",
+					"/processing/output/{}/allpass/3/frequency='128'",
+					"/processing/output/{}/beam_control_allpass/q='1'"
+				],
+				"title": "X1100C Front Facing"
+			},
+			{
+				"controlPoints": [
+					"/processing/output/{}/delay='499'",
+					"/processing/output/{}/polarity_reversal='true'",
+					"/processing/output/{}/allpass/1/frequency='32'",
+					"/processing/output/{}/allpass/2/frequency='64'",
+					"/processing/output/{}/allpass/3/frequency='128'",
+					"/processing/output/{}/beam_control_allpass/q='1'"
+				],
+				"title": "X1100C Rear Facing"
+			}
+		],
+		"1100-LFC": [
+			{
+				"controlPoints": [
+					"/processing/output/{}/allpass/1/frequency='32'",
+					"/processing/output/{}/allpass/2/frequency='64'",
+					"/processing/output/{}/allpass/3/frequency='128'",
+					"/processing/output/{}/beam_control_allpass/q='1'"
+				],
+				"title": "1100-LFC Front Facing"
+			},
+			{
+				"controlPoints": [
+					"/processing/output/{}/delay='499'",
+					"/processing/output/{}/polarity_reversal='true'",
+					"/processing/output/{}/allpass/1/frequency='32'",
+					"/processing/output/{}/allpass/2/frequency='64'",
+					"/processing/output/{}/allpass/3/frequency='128'",
+					"/processing/output/{}/beam_control_allpass/q='1'"
+				],
+				"title": "1100-LFC Rear Facing"
+			}
+		],
+		"2100-LFC": [
+			{
+				"controlPoints": [
+					"/processing/output/{}/allpass/1/frequency='32'",
+					"/processing/output/{}/allpass/2/frequency='64'",
+					"/processing/output/{}/allpass/3/frequency='128'",
+					"/processing/output/{}/beam_control_allpass/q='1'"
+				],
+				"title": "2100-LFC Front Facing"
+			},
+			{
+				"controlPoints": [
+					"/processing/output/{}/delay='384'",
+					"/processing/output/{}/polarity_reversal='true'",
+					"/processing/output/{}/allpass/1/frequency='32'",
+					"/processing/output/{}/allpass/2/frequency='64'",
+					"/processing/output/{}/allpass/3/frequency='128'",
+					"/processing/output/{}/beam_control_allpass/q='1'"
+				],
+				"title": "2100-LFC Rear Facing"
+			}
+		],
+		"900-LFC": [
+			{
+				"controlPoints": [
+					"/processing/output/{}/allpass/1/frequency='32'",
+					"/processing/output/{}/allpass/2/frequency='64'",
+					"/processing/output/{}/allpass/3/frequency='128'",
+					"/processing/output/{}/beam_control_allpass/q='1'"
+				],
+				"title": "900-LFC Front Facing"
+			},
+			{
+				"controlPoints": [
+					"/processing/output/{}/delay='365'",
+					"/processing/output/{}/polarity_reversal='true'",
+					"/processing/output/{}/allpass/1/frequency='32'",
+					"/processing/output/{}/allpass/2/frequency='64'",
+					"/processing/output/{}/allpass/3/frequency='128'",
+					"/processing/output/{}/beam_control_allpass/q='1'"
+				],
+				"title": "900-LFC Rear Facing"
+			}
+		],
+		"750-LFC": [
+			{
+				"controlPoints": [
+					"/processing/output/{}/allpass/1/frequency='32'",
+					"/processing/output/{}/allpass/2/frequency='64'",
+					"/processing/output/{}/allpass/3/frequency='128'",
+					"/processing/output/{}/beam_control_allpass/q='1'"
+				],
+				"title": "750-LFC Front Facing"
+			},
+			{
+				"controlPoints": [
+					"/processing/output/{}/delay='278'",
+					"/processing/output/{}/polarity_reversal='true'",
+					"/processing/output/{}/allpass/1/frequency='32'",
+					"/processing/output/{}/allpass/2/frequency='64'",
+					"/processing/output/{}/allpass/3/frequency='128'",
+					"/processing/output/{}/beam_control_allpass/q='1'"
+				],
+				"title": "750-LFC Rear Facing"
+			}
+		],
+		"700-HP": [
+			{
+				"controlPoints": [
+					"/processing/output/{}/allpass/1/frequency='32'",
+					"/processing/output/{}/allpass/2/frequency='64'",
+					"/processing/output/{}/allpass/3/frequency='128'",
+					"/processing/output/{}/beam_control_allpass/q='1'",
+					"/processing/output/{}/highpass/bypass='false'",
+					"/processing/output/{}/highpass/frequency='26'",
+					"/processing/output/{}/highpass/type='4'",
+					"/processing/output/{}/lowpass/bypass='false'",
+					"/processing/output/{}/lowpass/frequency='52'",
+					"/processing/output/{}/lowpass/type='2'"
+				],
+				"title": "700-HP = 1100-LFC Front Facing"
+			},
+			{
+				"controlPoints": [
+					"/processing/output/{}/delay='384'",
+					"/processing/output/{}/polarity_reversal='true'",
+					"/processing/output/{}/allpass/1/frequency='32'",
+					"/processing/output/{}/allpass/2/frequency='64'",
+					"/processing/output/{}/allpass/3/frequency='128'",
+					"/processing/output/{}/beam_control_allpass/q='1'",
+					"/processing/output/{}/highpass/bypass='false'",
+					"/processing/output/{}/highpass/frequency='26'",
+					"/processing/output/{}/highpass/type='4'",
+					"/processing/output/{}/lowpass/bypass='false'",
+					"/processing/output/{}/lowpass/frequency='52'",
+					"/processing/output/{}/lowpass/type='2'"
+				],
+				"title": "700-HP = 1100-LFC Rear Facing"
+			},
+			{
+				"controlPoints": [
+					"/processing/output/{}/allpass/1/frequency='32'",
+					"/processing/output/{}/allpass/2/frequency='64'",
+					"/processing/output/{}/allpass/3/frequency='128'",
+					"/processing/output/{}/beam_control_allpass/q='1'"
+				],
+				"title": "700-HP Front Facing"
+			},
+			{
+				"controlPoints": [
+					"/processing/output/{}/delay='384'",
+					"/processing/output/{}/polarity_reversal='true'",
+					"/processing/output/{}/allpass/1/frequency='32'",
+					"/processing/output/{}/allpass/2/frequency='64'",
+					"/processing/output/{}/allpass/3/frequency='128'",
+					"/processing/output/{}/beam_control_allpass/q='1'"
+				],
+				"title": "700-HP Rear Facing"
+			}
+		],
+		"600-HP": [
+			{
+				"controlPoints": [
+					"/processing/output/{}/allpass/1/frequency='32'",
+					"/processing/output/{}/allpass/2/frequency='64'",
+					"/processing/output/{}/allpass/3/frequency='128'",
+					"/processing/output/{}/beam_control_allpass/q='1'",
+					"/processing/output/{}/lowpass/bypass='false'",
+					"/processing/output/{}/lowpass/frequency='115'",
+					"/processing/output/{}/lowpass/type='2'"
+				],
+				"title": "600-HP = 900-LFC Front Facing"
+			},
+			{
+				"controlPoints": [
+					"/processing/output/{}/delay='336'",
+					"/processing/output/{}/polarity_reversal='true'",
+					"/processing/output/{}/allpass/1/frequency='32'",
+					"/processing/output/{}/allpass/2/frequency='64'",
+					"/processing/output/{}/allpass/3/frequency='128'",
+					"/processing/output/{}/beam_control_allpass/q='1'",
+					"/processing/output/{}/lowpass/bypass='false'",
+					"/processing/output/{}/lowpass/frequency='115'",
+					"/processing/output/{}/lowpass/type='2'"
+				],
+				"title": "600-HP = 900-LFC Rear Facing"
+			},
+			{
+				"controlPoints": [
+					"/processing/output/{}/allpass/1/frequency='32'",
+					"/processing/output/{}/allpass/2/frequency='64'",
+					"/processing/output/{}/allpass/3/frequency='128'",
+					"/processing/output/{}/beam_control_allpass/q='1'"
+				],
+				"title": "600-HP Front Facing"
+			},
+			{
+				"controlPoints": [
+					"/processing/output/{}/delay='336'",
+					"/processing/output/{}/polarity_reversal='true'",
+					"/processing/output/{}/allpass/1/frequency='32'",
+					"/processing/output/{}/allpass/2/frequency='64'",
+					"/processing/output/{}/allpass/3/frequency='128'",
+					"/processing/output/{}/beam_control_allpass/q='1'"
+				],
+				"title": "600-HP Rear Facing"
+			}
+		],
+		"500-HP": [
+			{
+				"controlPoints": [
+					"/processing/output/{}/allpass/1/frequency='32'",
+					"/processing/output/{}/allpass/2/frequency='64'",
+					"/processing/output/{}/allpass/3/frequency='128'",
+					"/processing/output/{}/beam_control_allpass/q='1'",
+					"/processing/output/{}/lowpass/bypass='false'",
+					"/processing/output/{}/lowpass/frequency='80'",
+					"/processing/output/{}/lowpass/type='4'"
+				],
+				"title": "500-HP = 900-LFC Front Facing"
+			},
+			{
+				"controlPoints": [
+					"/processing/output/{}/delay='288'",
+					"/processing/output/{}/polarity_reversal='true'",
+					"/processing/output/{}/allpass/1/frequency='32'",
+					"/processing/output/{}/allpass/2/frequency='64'",
+					"/processing/output/{}/allpass/3/frequency='128'",
+					"/processing/output/{}/beam_control_allpass/q='1'",
+					"/processing/output/{}/lowpass/bypass='false'",
+					"/processing/output/{}/lowpass/frequency='80'",
+					"/processing/output/{}/lowpass/type='4'"
+				],
+				"title": "500-HP = 900-LFC Rear Facing"
+			},
+			{
+				"controlPoints": [
+					"/processing/output/{}/allpass/1/frequency='32'",
+					"/processing/output/{}/allpass/2/frequency='64'",
+					"/processing/output/{}/allpass/3/frequency='128'",
+					"/processing/output/{}/beam_control_allpass/q='1'"
+				],
+				"title": "500-HP Front Facing"
+			},
+			{
+				"controlPoints": [
+					"/processing/output/{}/delay='288'",
+					"/processing/output/{}/polarity_reversal='true'",
+					"/processing/output/{}/allpass/1/frequency='32'",
+					"/processing/output/{}/allpass/2/frequency='64'",
+					"/processing/output/{}/allpass/3/frequency='128'",
+					"/processing/output/{}/beam_control_allpass/q='1'"
+				],
+				"title": "500-HP Rear Facing"
+			}
+		],
+		"650-P": [
+			{
+				"controlPoints": [
+					"/processing/output/{}/allpass/1/frequency='32'",
+					"/processing/output/{}/allpass/2/frequency='64'",
+					"/processing/output/{}/allpass/3/frequency='128'",
+					"/processing/output/{}/beam_control_allpass/q='1'",
+					"/processing/output/{}/highpass/bypass='false'",
+					"/processing/output/{}/highpass/frequency='27'",
+					"/processing/output/{}/highpass/type='4'",
+					"/processing/output/{}/lowpass/bypass='false'",
+					"/processing/output/{}/lowpass/frequency='54'",
+					"/processing/output/{}/lowpass/type='2'"
+				],
+				"title": "650-P = 1100-LFC Front Facing"
+			},
+			{
+				"controlPoints": [
+					"/processing/output/{}/delay='336'",
+					"/processing/output/{}/polarity_reversal='true'",
+					"/processing/output/{}/allpass/1/frequency='32'",
+					"/processing/output/{}/allpass/2/frequency='64'",
+					"/processing/output/{}/allpass/3/frequency='128'",
+					"/processing/output/{}/beam_control_allpass/q='1'",
+					"/processing/output/{}/highpass/bypass='false'",
+					"/processing/output/{}/highpass/frequency='27'",
+					"/processing/output/{}/highpass/type='4'",
+					"/processing/output/{}/lowpass/bypass='false'",
+					"/processing/output/{}/lowpass/frequency='54'",
+					"/processing/output/{}/lowpass/type='2'"
+				],
+				"title": "650-P = 1100-LFC Rear Facing"
+			},
+			{
+				"controlPoints": [
+					"/processing/output/{}/allpass/1/frequency='32'",
+					"/processing/output/{}/allpass/2/frequency='64'",
+					"/processing/output/{}/allpass/3/frequency='128'",
+					"/processing/output/{}/beam_control_allpass/q='1'"
+				],
+				"title": "650-P Front Facing"
+			},
+			{
+				"controlPoints": [
+					"/processing/output/{}/delay='336'",
+					"/processing/output/{}/polarity_reversal='true'",
+					"/processing/output/{}/allpass/1/frequency='32'",
+					"/processing/output/{}/allpass/2/frequency='64'",
+					"/processing/output/{}/allpass/3/frequency='128'",
+					"/processing/output/{}/beam_control_allpass/q='1'"
+				],
+				"title": "650-P Rear Facing"
+			}
+		],
+		"USW-1P": [
+			{
+				"controlPoints": [
+					"/processing/output/{}/allpass/1/frequency='32'",
+					"/processing/output/{}/allpass/2/frequency='64'",
+					"/processing/output/{}/allpass/3/frequency='128'",
+					"/processing/output/{}/beam_control_allpass/q='1'",
+					"/processing/output/{}/highpass/bypass='false'",
+					"/processing/output/{}/highpass/frequency='32'",
+					"/processing/output/{}/highpass/type='4'",
+					"/processing/output/{}/lowpass/bypass='false'",
+					"/processing/output/{}/lowpass/frequency='95'",
+					"/processing/output/{}/lowpass/type='4'"
+				],
+				"title": "USW-1P = 900-LFC Front Facing"
+			},
+			{
+				"controlPoints": [
+					"/processing/output/{}/allpass/1/frequency='32'",
+					"/processing/output/{}/allpass/2/frequency='64'",
+					"/processing/output/{}/allpass/3/frequency='128'",
+					"/processing/output/{}/beam_control_allpass/q='1'"
+				],
+				"title": "USW-1P Front Facing"
+			}
+		],
+		"UMS-1P": [
+			{
+				"controlPoints": [
+					"/processing/output/{}/allpass/1/frequency='32'",
+					"/processing/output/{}/allpass/2/frequency='64'",
+					"/processing/output/{}/allpass/3/frequency='128'",
+					"/processing/output/{}/beam_control_allpass/q='1'",
+					"/processing/output/{}/highpass/bypass='false'",
+					"/processing/output/{}/highpass/frequency='36'",
+					"/processing/output/{}/highpass/type='4'",
+					"/processing/output/{}/lowpass/bypass='false'",
+					"/processing/output/{}/lowpass/frequency='110'",
+					"/processing/output/{}/lowpass/type='4'"
+				],
+				"title": "UMS-1P = 900-LFC Front Facing"
+			},
+			{
+				"controlPoints": [
+					"/processing/output/{}/allpass/1/frequency='32'",
+					"/processing/output/{}/allpass/2/frequency='64'",
+					"/processing/output/{}/allpass/3/frequency='128'",
+					"/processing/output/{}/beam_control_allpass/q='1'"
+				],
+				"title": "UMS-1P Front Facing"
+			}
+		],
+		"UMS-1XP": [
+			{
+				"controlPoints": [
+					"/processing/output/{}/allpass/1/frequency='32'",
+					"/processing/output/{}/allpass/2/frequency='64'",
+					"/processing/output/{}/allpass/3/frequency='128'",
+					"/processing/output/{}/beam_control_allpass/q='1'",
+					"/processing/output/{}/highpass/bypass='false'",
+					"/processing/output/{}/highpass/frequency='36'",
+					"/processing/output/{}/highpass/type='4'",
+					"/processing/output/{}/lowpass/bypass='false'",
+					"/processing/output/{}/lowpass/frequency='110'",
+					"/processing/output/{}/lowpass/type='4'"
+				],
+				"title": "UMS-1XP = 900-LFC Front Facing"
+			},
+			{
+				"controlPoints": [
+					"/processing/output/{}/allpass/1/frequency='32'",
+					"/processing/output/{}/allpass/2/frequency='64'",
+					"/processing/output/{}/allpass/3/frequency='128'",
+					"/processing/output/{}/beam_control_allpass/q='1'"
+				],
+				"title": "UMS-1XP Front Facing"
+			}
+		],
+		"M3D-Sub": [
+			{
+				"controlPoints": [
+					"/processing/output/{}/allpass/1/frequency='32'",
+					"/processing/output/{}/allpass/2/frequency='64'",
+					"/processing/output/{}/allpass/3/frequency='128'",
+					"/processing/output/{}/beam_control_allpass/q='1'",
+					"/processing/output/{}/lowpass/bypass='false'",
+					"/processing/output/{}/lowpass/frequency='150'",
+					"/processing/output/{}/lowpass/type='4'",
+					"/processing/output/{}/eq/1/frequency='65'",
+					"/processing/output/{}/eq/1/bandwidth='0.3'",
+					"/processing/output/{}/eq/1/gain='-4'"
+				],
+				"title": "M3D-Sub = 1100-LFC Front Facing"
+			},
+			{
+				"controlPoints": [
+					"/processing/output/{}/allpass/1/frequency='32'",
+					"/processing/output/{}/allpass/2/frequency='64'",
+					"/processing/output/{}/allpass/3/frequency='128'",
+					"/processing/output/{}/beam_control_allpass/q='1'"
+				],
+				"title": "M3D-Sub Front Facing"
+			}
+		],
+		"M2D-Sub": [
+			{
+				"controlPoints": [
+					"/processing/output/{}/allpass/1/frequency='32'",
+					"/processing/output/{}/allpass/2/frequency='64'",
+					"/processing/output/{}/allpass/3/frequency='128'",
+					"/processing/output/{}/beam_control_allpass/q='1'",
+					"/processing/output/{}/highpass/bypass='false'",
+					"/processing/output/{}/highpass/frequency='37'",
+					"/processing/output/{}/highpass/type='4'",
+					"/processing/output/{}/lowpass/bypass='false'",
+					"/processing/output/{}/lowpass/frequency='110'",
+					"/processing/output/{}/lowpass/type='4'"
+				],
+				"title": "M2D-Sub = 900-LFC Front Facing"
+			},
+			{
+				"controlPoints": [
+					"/processing/output/{}/allpass/1/frequency='32'",
+					"/processing/output/{}/allpass/2/frequency='64'",
+					"/processing/output/{}/allpass/3/frequency='128'",
+					"/processing/output/{}/beam_control_allpass/q='1'"
+				],
+				"title": "M2D-Sub Front Facing"
+			}
+		],
+		"M1D-Sub": [
+			{
+				"controlPoints": [
+					"/processing/output/{}/allpass/1/frequency='32'",
+					"/processing/output/{}/allpass/2/frequency='64'",
+					"/processing/output/{}/allpass/3/frequency='128'",
+					"/processing/output/{}/beam_control_allpass/q='1'",
+					"/processing/output/{}/highpass/bypass='false'",
+					"/processing/output/{}/highpass/frequency='30'",
+					"/processing/output/{}/highpass/type='4'",
+					"/processing/output/{}/lowpass/bypass='false'",
+					"/processing/output/{}/lowpass/frequency='100'",
+					"/processing/output/{}/lowpass/type='4'"
+				],
+				"title": "M1D-Sub = 900-LFC Front Facing"
+			},
+			{
+				"controlPoints": [
+					"/processing/output/{}/allpass/1/frequency='32'",
+					"/processing/output/{}/allpass/2/frequency='64'",
+					"/processing/output/{}/allpass/3/frequency='128'",
+					"/processing/output/{}/beam_control_allpass/q='1'"
+				],
+				"title": "M1D-Sub Front Facing"
+			}
+		]
+	}
+}

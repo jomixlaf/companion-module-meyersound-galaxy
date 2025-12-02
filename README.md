@@ -22,9 +22,7 @@ I only implement what I needed so far but there is more to come. Let me know if 
 ✨Features Action's
 
     • Speaker Test:
-    Cycles through your outputs automatically so you can quickly test speaker lines. 
-    You can run it one output at a time (solo) or in pairs (A+B). 
-    The timing between steps is adjustable, and outputs are muted/unmuted automatically during the chase.
+        Cycles through your outputs automatically so you can quickly test speaker lines. You can run it one output at a time (solo) or in pairs (A+B). The timing between steps is adjustable, and outputs are muted/unmuted automatically during the chase.
 
     Inputs
     • Mute/unmute/toggle

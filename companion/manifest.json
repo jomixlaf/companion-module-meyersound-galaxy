@@ -1,0 +1,32 @@
+{
+	"id": "meyersound-galaxy",
+	"name": "Meyer Sound Galaxy",
+	"shortname": "Galaxy",
+	"description": "Control a Meyer Sound Galaxy device via TCP",
+	"version": "1.0.0",
+	"license": "MIT",
+	"repository": "git+https://github.com/bitfocus/companion-module-meyersound-galaxy.git",
+	"bugs": "https://github.com/bitfocus/companion-module-meyersound-galaxy/issues",
+	"maintainers": [
+		{
+			"name": "Jonathan Jomix Lafontaine",
+			"email": "jonathan_lafontaine@icloud.com"
+		}
+	],
+	"runtime": {
+		"type": "node18",
+		"api": "nodejs-ipc",
+		"apiVersion": "1.0.0",
+		"entrypoint": "main.js"
+	},
+	"legacyIds": [],
+	"manufacturer": "Meyer Sound",
+	"products": ["Galaxy"],
+	"keywords": [],
+	"bonjourQueries": {
+		"bonjour_host": {
+			"type": "_galaxy._tcp",
+			"protocol": "tcp"
+		}
+	}
+}
